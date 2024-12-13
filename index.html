@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedal des Couleurs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <!-- En-tête -->
+        <header>
+            <h1 id="titre-principal">DEDAL <br> DES COULEURS</h1>
+            <button class="toggle-icon" onclick="toggleSidebar()" aria-label="Afficher ou masquer la barre latérale">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="navbar" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="#Accueil" aria-label="Aller à la section Accueil">Accueil</a></li>
+                    <li><a href="#Œuvres" aria-label="Aller à la section Œuvres">Œuvres</a></li>
+                    <li><a href="#Artistes" aria-label="Aller à la section Artistes">Artistes</a></li>
+                    <li><a href="#Blog" aria-label="Aller à la section Blog">Blog</a></li>
+                    <li><a href="#Contact" aria-label="Aller à la section Contact">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <label for="search" class="sr-only">Rechercher sur le site</label>
+                    <input type="text" id="search" placeholder="Rechercher ..." aria-label="Rechercher sur le site">
+                    <button type="submit" aria-label="Soumettre la recherche">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+            <nav class="sidebar" aria-labelledby="titre-sidebar">
+                <h2 id="titre-sidebar" class="sr-only">Navigation de la barre latérale</h2>
+                <button class="close-btn" onclick="toggleSidebar()" aria-label="Fermer la barre latérale">&times;</button>
+                <div class="search-box">
+                    <label for="search-sidebar" class="sr-only">Rechercher dans la barre latérale</label>
+                    <input type="text" id="search-sidebar" placeholder="Rechercher ..." aria-label="Rechercher dans la barre latérale">
+                    <button type="submit" aria-label="Soumettre la recherche">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="#Accueil" aria-label="Aller à la section Accueil">Accueil</a></li>
+                    <li><a href="#Œuvres" aria-label="Aller à la section Œuvres">Œuvres</a></li>
+                    <li><a href="#Artistes" aria-label="Aller à la section Artistes">Artistes</a></li>
+                    <li><a href="#Blog" aria-label="Aller à la section Blog">Blog</a></li>
+                    <li><a href="#Contact" aria-label="Aller à la section Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenu principal -->
+        <main id="contenu-principal" tabindex="-1">
+            <!-- Section héros -->
+            <section class="slide slide-active-hero1">
+                <div class="hero1-content">
+                    <h2>Galerie d'Art <br> en ligne</h2>
+                    <p>Plongez dans un univers d'œuvres <br> exceptionnelles</p>
+                </div>
+                <img src="images/hero-img1.png" alt="Peinture abstraite aux couleurs vibrantes" class="hero-img">
+            </section>
+
+            <section class="slide slide-hero2">
+                <div class="hero2-content">
+                    <h2>Achetez des <br> œuvres d'art<br> originales</h2>
+                </div>
+                <img src="images/hero-img2.png" alt="Galerie montrant des œuvres d'art abstraites et colorées" class="hero-img">
+            </section>
+
+            <section class="slide slide-hero3">
+                <div class="hero3-content">
+                    <h2>Trouvez <br> Votre Style <br>Artistique</h2>
+                    <p>Laissez-vous inspirer par des œuvres <br> uniques</p>
+                </div>
+                <img src="images/hero-img3.png" alt="Image artistique avec des éclats de couleurs vives" class="hero-img">
+            </section>
+
+            <div class="carousel-controls">
+                <button class="prev" aria-label="Diapositive précédente">&#10094;</button>
+                <button class="next" aria-label="Diapositive suivante">&#10095;</button>
+            </div>
+        </main>
+
+        <!-- Pied de page -->
+        <footer id="Contact">
+            <div class="footer-content">
+                <div>
+                    <h2>Liens rapides</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#Accueil" aria-label="Revenir à la section Accueil">Accueil</a></li>
+                            <li><a href="#Œuvres" aria-label="Aller à la section Œuvres">Œuvres</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <h2>Restez connecté</h2>
+                    <nav>
+                        <a href="#" aria-label="Visiter notre page Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Visiter notre page Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Visiter notre page Twitter"><i class="fab fa-twitter"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
